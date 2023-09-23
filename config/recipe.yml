@@ -44,6 +44,7 @@ modules:
       - steam-devices
       - tmux
       - tailscale
+      - virt-manager
     remove:
       - firefox # default firefox removed in favor of flatpak
       - firefox-langpacks # langpacks needs to also be removed to prevent dependency problems
@@ -72,6 +73,7 @@ modules:
       - LibreOffice: org.libreoffice.LibreOffice
       - MakeMKV: com.makemkv.MakeMKV
       - MKVToolnix: org.bunkus.mkvtoolnix-gui
+      - Spotify: com.spotify.Client
       - Steam: com.valvesoftware.Steam
       - VLC: org.videolan.VLC
 
