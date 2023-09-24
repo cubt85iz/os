@@ -5,7 +5,7 @@ description: A starting point for further customization of uBlue images. Make yo
 
 # the base image to build on top of (FROM) and the version tag to use
 base-image: ghcr.io/ublue-os/silverblue-nvidia
-image-version: 38 # latest is also supported if you want new updates ASAP
+image-version: 38-470 # latest is also supported if you want new updates ASAP
 
 # module configuration, executed in order
 # you can include multiple instances of the same module
@@ -67,15 +67,14 @@ modules:
                 #  will be installed and set up
     custom-flatpaks: # this section is optional
       - Brave: com.brave.Browser
+      - Clapper: com.github.rafostar.Clapper
       - Discord: com.discordapp.Discord
       - Boxes: org.gnome.Boxes
       - HeroicGamesLauncher: com.heroicgameslauncher.hgl
       - LibreOffice: org.libreoffice.LibreOffice
-      - MakeMKV: com.makemkv.MakeMKV
       - MKVToolnix: org.bunkus.mkvtoolnix-gui
       - Spotify: com.spotify.Client
       - Steam: com.valvesoftware.Steam
-      - VLC: org.videolan.VLC
 
   - type: script
     scripts:
