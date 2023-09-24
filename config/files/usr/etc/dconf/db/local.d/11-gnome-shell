@@ -1,0 +1,37 @@
+[org/gnome/shell/app-switcher]
+current-workspace-only=true
+
+[org/gnome/shell/extensions/Logo-menu]
+menu-button-icon-image=1
+
+[org/gnome/shell/extensions/dash-to-dock-pop]
+background-opacity=0.80000000000000004
+border-radius=30
+dash-max-icon-size=48
+dock-alignment='CENTRE'
+dock-position='BOTTOM'
+floating-margin=4
+height-fraction=0.90000000000000002
+intellihide-mode='FOCUS_APPLICATION_WINDOWS'
+preferred-monitor=-2
+preferred-monitor-by-connector='eDP-1'
+show-apps-at-top=true
+show-mounts=false
+show-show-apps-button=true
+
+[org/gnome/shell/extensions/dynamic-panel-transparency]
+enable-opacity=true
+enable-transparency=true
+icon-shadow-position=(0, 2, 5)
+maximized-opacity=255
+text-shadow-position=(0, 3, 5)
+unmaximized-opacity=0
+
+[org/gnome/shell/extensions/openweather]
+position-in-panel='right'
+pressure-unit='bar'
+unit='fahrenheit'
+wind-speed-unit='mph'
+
+[org/gnome/shell/weather]
+automatic-location=false

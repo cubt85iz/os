@@ -1,0 +1,3 @@
+[org/gnome/desktop/notifications]
+application-children=['org-gnome-software', 'org-gnome-terminal', 'org-gnome-extensions-desktop', 'org-gnome-evolution-alarm-notify', 'org-gnome-nautilus', 'code', 'gnome-power-panel', 'gnome-network-panel', 'firefox', 'gnome-printers-panel', 'com-spotify-client']
+show-in-lock-screen=false
