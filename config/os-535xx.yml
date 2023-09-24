@@ -66,14 +66,16 @@ modules:
   - type: yafti # if included, yafti and it's dependencies (pip & libadwaita)
                 #  will be installed and set up
     custom-flatpaks: # this section is optional
+      - Boxes: org.gnome.Boxes
       - Brave: com.brave.Browser
       - Clapper: com.github.rafostar.Clapper
       - Discord: com.discordapp.Discord
-      - Boxes: org.gnome.Boxes
-      - HeroicGamesLauncher: com.heroicgameslauncher.hgl
+      - Firefox: org.mozilla.firefox
       - LibreOffice: org.libreoffice.LibreOffice
       - MakeMKV: com.makemkv.MakeMKV
       - MKVToolnix: org.bunkus.mkvtoolnix-gui
+      - OpenRGB: org.openrgb.OpenRGB
+      - Piper: org.freedesktop.Piper
       - Spotify: com.spotify.Client
       - Steam: com.valvesoftware.Steam
 
