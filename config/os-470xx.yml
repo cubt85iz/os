@@ -81,3 +81,5 @@ modules:
     scripts:
       # this sets up the proper policy & signing files for signed images to work
       - signing.sh
+      # Add support for chezmoi
+      - github-release-install.sh "twpayne/chezmoi" "x86_64"
