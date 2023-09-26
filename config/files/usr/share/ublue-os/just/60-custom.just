@@ -4,6 +4,7 @@
 install-appimages:
   mkdir -p ~/Apps
   curl https://mail.tutanota.com/desktop/tutanota-desktop-linux.AppImage -o ~/Apps/tutanota-desktop-linux.AppImage
+  chmod u+x ~/Apps/tutanota-desktop-linux.AppImage
 
 install-gnome-extensions:
   pip install --upgrade gnome-extensions-cli
