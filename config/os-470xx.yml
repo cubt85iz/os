@@ -30,6 +30,7 @@ modules:
       - ddccontrol
       - ddccontrol-db
       - ddccontrol-gtk
+      - hadolint
       - input-remapper
       - libvirt
       - qemu
