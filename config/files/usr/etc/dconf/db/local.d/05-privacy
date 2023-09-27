@@ -1,6 +1,0 @@
-[org/gnome/desktop/privacy]
-disable-camera=true
-old-files-age=uint32 30
-recent-files-max-age=-1
-remember-recent-files=false
-report-technical-problems=true

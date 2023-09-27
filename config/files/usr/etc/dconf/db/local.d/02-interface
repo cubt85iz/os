@@ -1,5 +1,0 @@
-[org/gnome/desktop/interface]
-clock-show-weekday=true
-color-scheme='prefer-dark'
-show-battery-percentage=true
-toolkit-accessibility=false
