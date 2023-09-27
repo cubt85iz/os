@@ -61,6 +61,7 @@ configure-gnome-extensions:
 
 # Configure settings for GNOME shell
 configure-gnome-shell:
+  gsettings set org.gnome.shell favorite-apps ['com.brave.Browser.desktop', 'org.mozilla.firefox.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.Nautilus.desktop', 'code.desktop', 'com.spotify.Client.desktop', 'com.valvesoftware.Steam.desktop', 'com.discordapp.Discord.desktop']
   gsettings set org.gnome.shell.app-switcher current-workspace-only 'true'
   gsettings set org.gnome.shell.weather automatic-location 'false'
 
@@ -159,6 +160,9 @@ install-gnome-extension uuid:
 
       # Copy extension_xml_file to glib_schemas_dir
       cp "$extension_xml_file" "$glib_schemas_dir"
+
+      # Enable extension
+      gnome-extensions enable {{ uuid }}
     fi
   fi
 
