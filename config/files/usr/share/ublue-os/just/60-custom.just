@@ -32,13 +32,13 @@ configure-desktop-interface:
 
 # Configures settings for desktop notifications
 configure-desktop-notifications:
-  gsettings set org.gnome.desktop.notifications application-children ['org-gnome-software', 'org-gnome-terminal', 'org-gnome-extensions-desktop', 'org-gnome-evolution-alarm-notify', 'org-gnome-nautilus', 'code', 'gnome-power-panel', 'gnome-network-panel', 'firefox', 'gnome-printers-panel', 'com-spotify-client']
+  gsettings set org.gnome.desktop.notifications application-children "['org-gnome-software', 'org-gnome-terminal', 'org-gnome-extensions-desktop', 'org-gnome-evolution-alarm-notify', 'org-gnome-nautilus', 'code', 'gnome-power-panel', 'gnome-network-panel', 'firefox', 'gnome-printers-panel', 'com-spotify-client']"
   gsettings set org.gnome.desktop.notifications show-in-lock-screen 'false'
 
 # Configure settings for GNOME extensions
 configure-gnome-extensions:
   gsettings set org.gnome.shell.extensions.alphabetical-app-grid folder-order-position 'start'
-  gsettings set org.gnome.shell.extensions.alphabetical-app-grid show-favorite-apps 'true'
+  gsettings set org.gnome.shell.extensions.alphabetical-app-grid show-favourite-apps 'true'
   gsettings set org.gnome.shell.extensions.alphabetical-app-grid sort-folder-contents 'true'
   gsettings set org.gnome.shell.extensions.dash-to-dock apply-custom-theme 'true'
   gsettings set org.gnome.shell.extensions.dash-to-dock autohide 'true'
@@ -61,14 +61,14 @@ configure-gnome-extensions:
 
 # Configure settings for GNOME shell
 configure-gnome-shell:
-  gsettings set org.gnome.shell favorite-apps ['com.brave.Browser.desktop', 'org.mozilla.firefox.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.Nautilus.desktop', 'code.desktop', 'com.spotify.Client.desktop', 'com.valvesoftware.Steam.desktop', 'com.discordapp.Discord.desktop']
+  gsettings set org.gnome.shell favorite-apps "['com.brave.Browser.desktop', 'org.mozilla.firefox.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.Nautilus.desktop', 'code.desktop', 'com.spotify.Client.desktop', 'com.valvesoftware.Steam.desktop', 'com.discordapp.Discord.desktop']"
   gsettings set org.gnome.shell.app-switcher current-workspace-only 'true'
   gsettings set org.gnome.shell.weather automatic-location 'false'
 
 # Configures keyboard bindings
 configure-keybindings:
-  gsettings set org.gnome.desktop.wm.keybindings show-desktop ['<Super>d']
-  gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings ['/org/gnome/settings-daemon/plugin/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugin/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugin/media-keys/custom-keybindings/custom2/']
+  gsettings set org.gnome.desktop.wm.keybindings show-desktop "['<Super>d']"
+  gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings "['/org/gnome/settings-daemon/plugin/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugin/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugin/media-keys/custom-keybindings/custom2/']"
   gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybindings.custom0 binding '<Primary><Alt>t'
   gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybindings.custom0 command 'gnome-terminal'
   gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybindings.custom0 name 'Open Terminal'
