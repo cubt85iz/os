@@ -1,5 +1,7 @@
 !include /usr/share/ublue-os/just/100-bling.just
 
+set ignore-comments := true
+
 # Compiles all GSettings XML schema files to gschemas.compiled
 compile-gsettings-schemas:
   #!/usr/bin/env bash
@@ -39,10 +41,12 @@ configure-desktop-notifications:
 configure-gnome-extensions:
   gsettings set org.gnome.shell.extensions.alphabetical-app-grid folder-order-position 'start'
   gsettings set org.gnome.shell.extensions.alphabetical-app-grid show-favourite-apps 'true'
+  gsettings set org.gnome.shell.extensions.blur-my-shell.panel blur 'false'
   gsettings set org.gnome.shell.extensions.dash-to-dock apply-custom-theme 'true'
   gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'previews'
   gsettings set org.gnome.shell.extensions.dash-to-dock show-apps-at-top 'true'
-  gsettings set org.gnome.shell.extensions.Logo-menu menu-button-icon-image '1'
+  gsettings set org.gnome.shell.extensions.dynamic-panel-transparency enable-opacity 'true'
+  gsettings set org.gnome.shell.extensions.logo-menu menu-button-icon-image '1'
   gsettings set org.gnome.shell.extensions.openweather position-in-panel 'right'
   gsettings set org.gnome.shell.extensions.openweather pressure-unit 'bar'
   gsettings set org.gnome.shell.extensions.openweather unit 'fahrenheit'
@@ -71,20 +75,9 @@ configure-keybindings:
 
 # Configures settings for Nautilus
 configure-nautilus:
-  gsettings set org.gnome.nautilus.preferences default-folder-view 'list-view'
+  gsettings set org.gnome.nautilus.preferences default-folder-viewer 'list-view'
   gsettings set org.gnome.nautilus.preferences migrated-gtk-settings 'true'
-  gsettings set org.gnome.nautilus.preferences search-filter-time-type 'last_modified'
-  gsettings set org.gnome.nautilus.preferences search-view 'list-view'
-  gsettings set org.gtk.settings.file-chooser date-format 'regular'
-  gsettings set org.gtk.settings.file-chooser location-mode 
-  gsettings set org.gtk.settings.file-chooser show-hidden 
-  gsettings set org.gtk.settings.file-chooser show-size-column 
-  gsettings set org.gtk.settings.file-chooser show-type-column 
-  gsettings set org.gtk.settings.file-chooser sidebar-width 
-  gsettings set org.gtk.settings.file-chooser sort-column 
-  gsettings set org.gtk.settings.file-chooser sort-directories-first 
-  gsettings set org.gtk.settings.file-chooser sort-order 
-  gsettings set org.gtk.settings.file-chooser type-format 
+  gsettings set org.gtk.settings.file-chooser sort-directories-first 'true'
 
 # Configures settings for power
 configure-power-settings:
