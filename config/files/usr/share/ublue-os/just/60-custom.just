@@ -39,19 +39,9 @@ configure-desktop-notifications:
 configure-gnome-extensions:
   gsettings set org.gnome.shell.extensions.alphabetical-app-grid folder-order-position 'start'
   gsettings set org.gnome.shell.extensions.alphabetical-app-grid show-favourite-apps 'true'
-  gsettings set org.gnome.shell.extensions.alphabetical-app-grid sort-folder-contents 'true'
   gsettings set org.gnome.shell.extensions.dash-to-dock apply-custom-theme 'true'
-  gsettings set org.gnome.shell.extensions.dash-to-dock autohide 'true'
   gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'previews'
-  gsettings set org.gnome.shell.extensions.dash-to-dock custom-background-color 'false'
-  gsettings set org.gnome.shell.extensions.dash-to-dock dock-position 'BOTTOM'
-  gsettings set org.gnome.shell.extensions.dash-to-dock intellihide 'true'
-  gsettings set org.gnome.shell.extensions.dash-to-dock intellihide-mode 'FOCUS_APPLICATION_WINDOWS'
-  gsettings set org.gnome.shell.extensions.dash-to-dock require-pressure-to-show 'true'
   gsettings set org.gnome.shell.extensions.dash-to-dock show-apps-at-top 'true'
-  gsettings set org.gnome.shell.extensions.dash-to-dock show-favorites 'true'
-  gsettings set org.gnome.shell.extensions.dash-to-dock show-mounts 'true'
-  gsettings set org.gnome.shell.extensions.dash-to-dock show-show-apps-button 'true'
   gsettings set org.gnome.shell.extensions.Logo-menu menu-button-icon-image '1'
   gsettings set org.gnome.shell.extensions.openweather position-in-panel 'right'
   gsettings set org.gnome.shell.extensions.openweather pressure-unit 'bar'
@@ -180,6 +170,7 @@ install-gnome-extensions:
   just install-gnome-extension no-overview@fthx
   just install-gnome-extension openweather-extension@jenslody.de
   just install-gnome-extension quick-settings-tweaks@qwreey
+  just install-gnome-extension transparent-top-bar@ftpix.com
   just compile-gsettings-schemas
   just configure-gnome-extensions
 
