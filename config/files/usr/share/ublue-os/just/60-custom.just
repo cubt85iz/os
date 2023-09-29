@@ -1,7 +1,5 @@
 !include /usr/share/ublue-os/just/100-bling.just
 
-set ignore-comments := true
-
 # Compiles all GSettings XML schema files to gschemas.compiled
 compile-gsettings-schemas:
   #!/usr/bin/env bash
