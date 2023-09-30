@@ -165,6 +165,9 @@ install-gnome-extensions:
   just compile-gsettings-schemas
   just configure-gnome-extensions
 
+install-starship:
+  curl -sS https://starship.rs/install.sh | sh -s -- --bin-dir $HOME/.local/bin
+
 # Sets up PC with desired settings
 setup:
   just configure-desktop-background
