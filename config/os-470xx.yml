@@ -31,6 +31,7 @@ modules:
       - ddccontrol-db
       - ddccontrol-gtk
       - fira-code-fonts
+      - gvfs-nfs
       - hadolint
       - input-remapper
       - steam-devices
