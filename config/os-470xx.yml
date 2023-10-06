@@ -62,6 +62,7 @@ modules:
       - Clapper: com.github.rafostar.Clapper
       - Discord: com.discordapp.Discord
       - Firefox: org.mozilla.firefox
+      - KeePassXC: org.keepassxc.KeePassXC
       - LibreOffice: org.libreoffice.LibreOffice
       - MKVToolnix: org.bunkus.mkvtoolnix-gui
       - Spotify: com.spotify.Client
