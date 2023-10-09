@@ -34,7 +34,6 @@ modules:
       - gvfs-nfs
       - hadolint
       - input-remapper
-      - libmediainfo
       - steam-devices
       - tmux
       - tailscale

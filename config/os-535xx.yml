@@ -30,6 +30,7 @@ modules:
       - ddccontrol-db
       - ddccontrol-gtk
       - fira-code-fonts
+      - gvfs-nfs
       - hadolint
       - input-remapper
       - steam-devices
@@ -60,6 +61,7 @@ modules:
       - Clapper: com.github.rafostar.Clapper
       - Discord: com.discordapp.Discord
       - Firefox: org.mozilla.firefox
+      - KeePassXC: org.keepassxc.KeePassXC
       - LibreOffice: org.libreoffice.LibreOffice
       - MakeMKV: com.makemkv.MakeMKV
       - MKVToolnix: org.bunkus.mkvtoolnix-gui
