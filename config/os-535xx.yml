@@ -28,7 +28,6 @@ modules:
       - code
       - fira-code-fonts
       - gvfs-nfs
-      - hadolint
       - input-remapper
       - steam-devices
       - tmux
