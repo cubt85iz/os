@@ -26,9 +26,6 @@ modules:
     install:
       - bash-color-prompt
       - code
-      - ddccontrol
-      - ddccontrol-db
-      - ddccontrol-gtk
       - fira-code-fonts
       - gvfs-nfs
       - hadolint
