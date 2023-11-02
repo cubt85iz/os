@@ -52,6 +52,7 @@ modules:
   - type: yafti # if included, yafti and it's dependencies (pip & libadwaita)
                 #  will be installed and set up
     custom-flatpaks: # this section is optional
+      - AndroidStudio: com.google.AndroidStudio
       - Boxes: org.gnome.Boxes
       - Brave: com.brave.Browser
       - Clapper: com.github.rafostar.Clapper
