@@ -27,6 +27,7 @@ modules:
       - bash-color-prompt
       - code
       - fira-code-fonts
+      - fuse-sshfs
       - gvfs-nfs
       - input-remapper
       - steam-devices
